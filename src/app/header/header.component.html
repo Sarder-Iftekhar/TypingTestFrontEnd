@@ -1,0 +1,37 @@
+
+<header>
+
+    <div class="menu-button" (click)="menuButtonClicked()">
+        <i class="bx bx-menu"></i>
+    </div>
+
+    <div class="brand-name">
+        <span>Typing Test</span>
+    </div>
+
+    <div class="btn-group">
+        <button class="btn btn-outline-light btn-lg">Login</button>
+        <button class="btn btn-outline-light btn-lg">Register</button>
+        <button class="btn btn-outline-light btn-lg" routerLink="/profile">Profile</button>
+        <button class="btn btn-outline-light btn-lg">Log out</button>
+
+    </div>
+
+    <!-- <div class="menu-button" (click)="menuButtonClicked()">
+        <i class='bx bx-menu'></i>
+    </div>
+
+    <div class="brand-name">
+        <span>Typing Test</span>
+    </div>
+
+    <div class="btn-group">
+        <button class="btn btn-outline-light btn-lg" *ngIf="!isLoggedIn()" data-bs-toggle="modal"
+            data-bs-target="#loginModal">Login</button>
+        <button class="btn btn-outline-light btn-lg" *ngIf="!isLoggedIn()" data-bs-toggle="modal"
+            data-bs-target="#registerModal">Register</button>
+        <button class="btn btn-outline-light btn-lg" routerLink="/profile" *ngIf="isLoggedIn()">Profile</button>
+        <button class=" btn btn-outline-light btn-lg" *ngIf="isLoggedIn()" (click)="logOutUser()">Log Out</button>
+    </div> -->
+
+</header>

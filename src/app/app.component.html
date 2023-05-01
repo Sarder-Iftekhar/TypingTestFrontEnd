@@ -1,0 +1,16 @@
+<!-- Header -->
+<app-header (sideNavToggled)="sideNavStatus = $event"></app-header>
+
+<!-- side nav -->
+<app-side-nav [ngClass]="{'side-nav-opened' : sideNavStatus}"></app-side-nav>
+
+<!-- main content  -->
+<main [ngClass]="{'main-shrink': sideNavStatus}">
+  <div class="display-area">
+                   <!--in place of router uotlet-- will show all routing component -->
+                   <router-outlet></router-outlet>
+  </div>
+  <!-- footer -->
+  <app-footer></app-footer>
+</main>
+
